@@ -8,7 +8,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",

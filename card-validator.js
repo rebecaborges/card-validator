@@ -1,28 +1,24 @@
 function cardValidator(number) {
-
   let lengthNumber = number.toString()
-  // pq com parseInt ele fica undefined e com toString ele funciona?
+  let result =[];
+
+  for(i in lengthNumber){
+    // console.log(i)
     
+    if(i % 2 === 0){
+      let multiplyIndex = lengthNumber[i] * 2;
+      // result.push(multiplyIndex);
 
-  for(num in lengthNumber){
-    
-    if(num % 2 === 0){
-
-      let multiplyIndex = lengthNumber.charAt(num) * 2;
-      
-      if(multiplyIndex > 9){
-        console.log("maior que 9, indice: "+ num)
-      }
-
-      console.log(multiplyIndex)
-
+        if(multiplyIndex > 9){
+          result.push(multiplyIndex -9);
+        }
     }else{
-      console.log(lengthNumber.charAt(num))
-    }
-  }
-
-}
-cardValidator(54923798)
+      result.push(Number(lengthNumber[i]));
+    };
+  };
+  console.log(result)
+};
+cardValidator(54329)
 
 
 //soma de todos os nºs % 10
