@@ -1,23 +1,37 @@
 {
-  "name": "eslint-validator",
+  "name": "card-validator",
   "version": "1.0.0",
-  "description": "",
+  "description": "validate credit cards with card number(in portuguese)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+    "test": "./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha",
+    "lint": "./node_modules/eslint/bin/eslint.js ."
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "mocha": "^6.1.4",
     "nyc": "^14.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:rebecaborges/card-validator.git"
+  },
+  "keywords": [
+    "validador de cartao",
+    "cartao de credito",
+    "validador",
+    "card validator",
+    "card"
+  ],
+  "author": "Rebeca Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebecaborges/card-validator/issues"
+  },
+  "homepage": "https://github.com/rebecaborges/card-validator#readme"
 }

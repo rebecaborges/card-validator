@@ -2,15 +2,15 @@
 
 Essa biblioteca tem como finalidade validar se um cartão de crédito é verdadeiro ou falso, com base nos números impressos no cartão.
 
-# Como instalar:
+## Como instalar:
 
 ```sh
 $ npm install card-validator
 ```
 
-# Como utilizar:
+## Como utilizar:
 
-# Versões do projeto
+## Versões do projeto
 
 #### versão 1.0.0 (released)
 
