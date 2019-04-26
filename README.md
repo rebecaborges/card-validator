@@ -1,4 +1,4 @@
-# Validador de cartão de crédito
+# Validador de cartão de crédito v.1.0.0
 
 Essa biblioteca tem como finalidade validar se um cartão de crédito é verdadeiro ou falso, com base nos números impressos no cartão.
 
