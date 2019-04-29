@@ -2,10 +2,10 @@
   "name": "card-validator",
   "version": "1.0.0",
   "description": "validate credit cards with card number(in portuguese)",
+  "readmeFileName": "README.md",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha",
-    "format": "prettier",
     "lint": "./node_modules/eslint/bin/eslint.js ."
   },
   "devDependencies": {
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:rebecaborges/card-validator.git"
+    "url": "https://github.com/rebecaborges/card-validator.git"
   },
   "keywords": [
     "validador de cartao",

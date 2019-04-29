@@ -10,9 +10,11 @@ $ npm install card-validator
 
 ## Como utilizar:
 
+
+
 ## Versões do projeto
 
 #### versão 1.0.0 (released)
 
-* funcionalidades: valida como verdadeiro ou falso.
-* validador de cartão de crédito com o número impresso no cartão.
+* funcionalidades: valida cartão como verdadeiro ou falso.
+* validador de cartão de crédito através do algoritmo de Luhn, retorna true para cartão válido e false para cartão inválido.

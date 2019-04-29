@@ -1,32 +1,45 @@
 let chai = require("chai");
-let nyc = require("nyc");
 let expect = chai.expect;
 let lib = require("../lib/index");
 
 describe("cardValidator()", ()=> {
-   it("para numeros aleatórios retorna false", ()=> {
+   it("for random numbers returns false", ()=> {
     expect(lib.cardValidator("02029330")).to.equal(false)
    });
-   it("para campo vazio do tipo string retorna false", ()=> {
-    expect(lib.cardValidator("")).to.equal(false)
-  });
-  it("para numero em string repetida retorna false", ()=> {
+   it("for repeated numbers of type string returns false", ()=> {
     expect(lib.cardValidator("000000000000000000")).to.equal(false)
   });
-  it("para campo com string vazio retorna falso", ()=> {
+   it("for empty field of type string returns false", ()=> {
+    expect(lib.cardValidator("")).to.equal(false)
+  });
+  it("for field with spaces of type string returns false", ()=> {
     expect(lib.cardValidator("         ")).to.equal(false)
   });
-  it("para campo com espacos vazio retorna falso", ()=> {
+  it("for field with empty spaces returns false", ()=> {
     expect(lib.cardValidator(         )).to.equal(false)
   });
-  it("para campo vazio retorna falso", ()=> {
+  it("for empty field returns false", ()=> {
     expect(lib.cardValidator()).to.equal(false)
   });
-   it("para campo com numeros aleatorios retorna falso", ()=> {
+   it("for field with random numbers returns false", ()=> {
     expect(lib.cardValidator(0000000011223)).to.equal(false)
   });
-  it("deve retornar true para cartão válido", ()=> {
+  it("should return true for credit card, Mastercard", ()=> {
     expect(lib.cardValidator(5555666677778884)).to.equal(true)
   });
-  
+  it("should return true for credit card, Visa", ()=> {
+    expect(lib.cardValidator(4012001037141112)).to.equal(true)
+  });
+  it("should return true for credit card, Dinners Club", ()=> {
+    expect(lib.cardValidator(36490102462661)).to.equal(true)
+  });
+  it("should return true for credit card, Hiper", ()=> {
+    expect(lib.cardValidator(6370950000000005)).to.equal(true)
+  });
+  it("should return true for credit card, Hipercard", ()=> {
+    expect(lib.cardValidator(6062825624254001)).to.equal(true)
+  });
+  it("should return true for credit card, Elo", ()=> {
+    expect(lib.cardValidator(6362970000457013)).to.equal(true)
+  });
 });
