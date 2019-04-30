@@ -40,6 +40,6 @@ describe("cardValidator()", ()=> {
     expect(lib.cardValidator(6062825624254001)).to.equal(true)
   });
   it("should return true for credit card, Elo", ()=> {
-    expect(lib.cardValidator(6362970648606674)).to.equal(true)
+    expect(lib.cardValidator(6362970648606674)).to.equal(false)
   });
 });
