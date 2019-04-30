@@ -1,6 +1,6 @@
-let chai = require("chai");
-let expect = chai.expect;
-let lib = require("../lib/index");
+const chai = require("chai");
+const expect = chai.expect;
+const lib = require("../lib/index");
 
 describe("cardValidator()", ()=> {
    it("for random numbers returns false", ()=> {
@@ -40,6 +40,6 @@ describe("cardValidator()", ()=> {
     expect(lib.cardValidator(6062825624254001)).to.equal(true)
   });
   it("should return true for credit card, Elo", ()=> {
-    expect(lib.cardValidator(6362970000457013)).to.equal(true)
+    expect(lib.cardValidator(6362970648606674)).to.equal(true)
   });
 });

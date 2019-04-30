@@ -2,7 +2,6 @@
   "name": "card-validator",
   "version": "1.0.0",
   "description": "validate credit cards with card number(in portuguese)",
-  "readmeFileName": "README.md",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha",
@@ -11,10 +10,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
     "mocha": "^6.1.4",
     "nyc": "^14.0.0"
   },
