@@ -12,6 +12,7 @@ $ npm install card-validator
 
 
 
+
 ## Versões do projeto
 
 #### versão 1.0.0 (released)
