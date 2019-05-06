@@ -36,7 +36,7 @@ module.exports = {
     "no-spaced-func": "error",
     "no-extra-semi": "error",
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
-    "linebreak-style": ["error","unix"],
+    "linebreak-style": ["error","windows"],
     "quotes": ["error","double"],
     "indent": ["error", 2],
   }

@@ -1,11 +1,11 @@
 {
   "name": "cred-card-valid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "validate credit cards with card number(in portuguese)",
   "main": "./lib/index.js",
   "scripts": {
     "test": "nyc mocha",
-    "lint": "eslint"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "chai": "^4.2.0",

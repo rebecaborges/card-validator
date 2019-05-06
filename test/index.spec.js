@@ -22,7 +22,7 @@ describe("cardValidator()", ()=> {
     expect(lib.cardValidator()).to.equal(false)
   });
    it("for field with random numbers returns false", ()=> {
-    expect(lib.cardValidator(0000000011223)).to.equal(false)
+    expect(lib.cardValidator(00000012334)).to.equal(false)
   });
   it("should return true for credit card, Mastercard", ()=> {
     expect(lib.cardValidator(5555666677778884)).to.equal(true)
@@ -40,6 +40,6 @@ describe("cardValidator()", ()=> {
     expect(lib.cardValidator(6062825624254001)).to.equal(true)
   });
   it("should return true for credit card, Elo", ()=> {
-    expect(lib.cardValidator(6362970648606674)).to.equal(false)
+    expect(lib.cardValidator(4389354449889082)).to.equal(true)
   });
 });
