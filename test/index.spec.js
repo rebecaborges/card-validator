@@ -4,7 +4,7 @@ const cardValidator = require("../lib/index");
 
 describe("cardValidator()", ()=> {
    it("for random numbers returns false", ()=> {
-    expect(cardValidator("02029330")).to.equal(false)
+    expect(cardValidator("02029330lala")).to.equal(false)
    });
    it("for repeated numbers of type string returns false", ()=> {
     expect(cardValidator("000000000000000000")).to.equal(false)
@@ -18,11 +18,8 @@ describe("cardValidator()", ()=> {
   it("for field with empty spaces returns false", ()=> {
     expect(cardValidator(         )).to.equal(false)
   });
-  it("for empty field returns false", ()=> {
-    expect(cardValidator(NaN)).to.equal(false)
-  });
-   it("for field with random numbers returns false", ()=> {
-    expect(cardValidator(00000012334)).to.equal(false)
+   it("repeted numbers returns false", ()=> {
+    expect(cardValidator(0000000000000000)).to.equal(false)
   });
   it("should return true for credit card, Mastercard", ()=> {
     expect(cardValidator(5555666677778884)).to.equal(true)

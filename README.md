@@ -20,7 +20,7 @@ $ npm install cred-card-valid
 
 #### versão 1.0.5 (released)
 
-* melhorias na limitação de números inseridos
+* melhorias no tratamento de números inseridos
 
 #### versão 1.0.4 (released)
 
