@@ -1,4 +1,4 @@
-# Validador de cartão de crédito v.1.0.4
+# Validador de cartão de crédito v.1.0.5
 
 Essa biblioteca tem como finalidade validar se um cartão de crédito é verdadeiro ou falso, com base nos números impressos no cartão.
 
@@ -17,6 +17,10 @@ $ npm install cred-card-valid
 ```
 
 ## roadmap oficial do projeto
+
+#### versão 1.0.5 (released)
+
+* melhorias na limitação de números inseridos
 
 #### versão 1.0.4 (released)
 

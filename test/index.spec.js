@@ -19,7 +19,7 @@ describe("cardValidator()", ()=> {
     expect(cardValidator(         )).to.equal(false)
   });
   it("for empty field returns false", ()=> {
-    expect(cardValidator()).to.equal(false)
+    expect(cardValidator(NaN)).to.equal(false)
   });
    it("for field with random numbers returns false", ()=> {
     expect(cardValidator(00000012334)).to.equal(false)
@@ -41,5 +41,14 @@ describe("cardValidator()", ()=> {
   });
   it("should return true for credit card, Elo", ()=> {
     expect(cardValidator(4389354449889082)).to.equal(true)
+  });
+  it("should return true for credit card, enRoute", ()=> {
+    expect(cardValidator(214903641058372)).to.equal(true)
+  });
+  it("false returns to less than 16", ()=> {
+    expect(cardValidator(12345678910)).to.equal(false)
+  });
+  it("returns false to greater than 19", ()=> {
+    expect(cardValidator(45676789987990087665432232323232)).to.equal(false)
   });
 });
