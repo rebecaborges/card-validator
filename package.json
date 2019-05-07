@@ -1,6 +1,6 @@
 {
   "name": "cred-card-valid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "validate credit cards with card number(in portuguese)",
   "main": "./lib/index.js",
   "scripts": {
