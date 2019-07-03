@@ -1,3 +1,5 @@
+![image 250x250](./image/card.jpg)
+
 # Validador de cartão de crédito v.1.0.5
 
 Essa biblioteca tem como finalidade verificar se um cartão de crédito é válido ou não, com base nos números impressos no cartão, retornando **true** ou **false**.
