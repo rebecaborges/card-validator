@@ -2,7 +2,10 @@ module.exports = {
   'env': {
     'browser': true,
     'es6': true,
-    'node': true
+    'node': true,
+    "commonjs": true,
+    "node": true,
+    "mocha": true
   },
   'extends': 'eslint:recommended',
   'globals': {
@@ -36,7 +39,7 @@ module.exports = {
     "no-spaced-func": "error",
     "no-extra-semi": "error",
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
-    "linebreak-style": ["error","windows"],
+    "linebreak-style": ["error", "windows"],
     "quotes": ["error","double"],
     "indent": ["error", 2],
   }
