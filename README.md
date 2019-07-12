@@ -2,6 +2,8 @@
 
 # Validador de cartão de crédito v.1.0.5
 
+[![Build Status](https://img.shields.io/badge/link-npm-red.svg)](https://www.npmjs.com/package/cred-card-valid)
+
 Essa biblioteca tem como finalidade verificar se um cartão de crédito é válido ou não, com base nos números impressos no cartão, retornando **true** ou **false**.
 
 ## Como instalar:
